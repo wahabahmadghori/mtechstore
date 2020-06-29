@@ -5,9 +5,12 @@
   --mainGrey:#fafafa;
   --darkGray:#5f5e5e;
   --mainWhite:#fff;
-  --mainBlack:#222;
-  --mainTransition:all 0.3 ease-in-out;
+  --mainBlack:rgb(2, 2, 2);
+  --mainTransition:all .3s ease-in-out;
   --mainSpacing:0.3rem;
+}
+html{
+  font-size:10px;
 }
 body{
   font-family: 'Source Sans Pro', sans-serif;
@@ -19,4 +22,26 @@ body{
   font-weight: bold;
   letter-spacing: var(--mainSpacing);
   text-transform: capitalize;
+}
+
+
+
+
+
+.mainLink{
+  background-color:var(--primaryColor);
+  color:var(--mainWhite);
+  display:inline-block;
+  padding:1rem 1.4rem;
+  outline:2px solid var(--primaryColor);
+  outline-offset: 4px ;
+  transition: var(--mainTransition);
+  text-transform: uppercase;
+  font-size:1.6rem;
+}
+.mainLink:hover{
+  background-color: var(--darkGray);
+  color:var(--mainWhite);
+  text-decoration: none;
+  outline-color: var(--darkGray);
 }
